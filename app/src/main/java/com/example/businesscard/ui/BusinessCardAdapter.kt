@@ -11,7 +11,7 @@ import com.example.businesscard.data.BusinessCard
 import com.example.businesscard.databinding.ItemBusinessCardBinding
 
 class BusinessCardAdapter: ListAdapter<BusinessCard, BusinessCardAdapter.ViewHolder>(DiffCallback()) {
-    val listenerShare : (View) -> Unit = {}
+    var listenerShare : (View) -> Unit = {}
 
     inner class ViewHolder(
         private val binding : ItemBusinessCardBinding
